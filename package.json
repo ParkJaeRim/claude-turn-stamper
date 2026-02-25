@@ -1,0 +1,9 @@
+{
+  "name": "claude-turn-timer",
+  "version": "1.0.0",
+  "description": "Claude Code Stop hook — logs the end time of each conversation turn",
+  "bin": {
+    "conv-timer": "./bin/index.js"
+  },
+  "license": "MIT"
+}
