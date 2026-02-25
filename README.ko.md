@@ -2,6 +2,8 @@
 
 Claude Code 대화 턴 종료 시각을 기록하고 HUD statusline에 표시하는 툴
 
+> Claude에게 일을 시켜놓고 딴짓하러 갔다가, 한참 만에 돌아와서야 이미 오래전에 끝났다는 걸 알게 되는 그 묘한 죄책감. 아시죠? 그걸 줄이기 위해 만들었습니다.
+
 > English docs: [README.md](./README.md)
 
 ---

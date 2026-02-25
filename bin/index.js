@@ -43,7 +43,10 @@ function readTodayRecords() {
 
 const args = process.argv.slice(2);
 
-if (args[0] === 'status') {
+if (args[0] === 'start') {
+  // UserPromptSubmit hook — record when user sends message
+  fs.writeFileSync(TEMP_FILE, new Date().toISOString(), 'utf8');
+} else if (args[0] === 'status') {
   // statusLine mode (for users without OMC HUD)
   try {
     const raw = fs.readFileSync(LAST_FILE, 'utf8').trim();

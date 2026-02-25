@@ -2,6 +2,8 @@
 
 A Claude Code tool that stamps and displays the end time of each conversation turn in the HUD statusline.
 
+> You told Claude to handle it, swore you'd be "right back" — and came back to find it finished who-knows-how-long ago. Sound familiar? That's exactly why this exists. Stop wasting time. Know when Claude's done.
+
 > 한국어 문서: [README.ko.md](./README.ko.md)
 
 ---
