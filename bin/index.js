@@ -43,7 +43,16 @@ function readTodayRecords() {
 
 const args = process.argv.slice(2);
 
-if (args[0] === 'stats') {
+if (args[0] === 'status') {
+  // statusLine mode (for users without OMC HUD)
+  try {
+    const raw = fs.readFileSync(LAST_FILE, 'utf8').trim();
+    const time = raw.match(/\d{2}:\d{2}:\d{2}/)?.[0] || '';
+    console.log(time ? `⏱ turn ended: ${time}` : '');
+  } catch (_) {
+    console.log('');
+  }
+} else if (args[0] === 'stats') {
   const records = readTodayRecords();
   if (records.length === 0) {
     console.log('No data for today yet.');
